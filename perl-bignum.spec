@@ -29,7 +29,7 @@ export PERL5LIB=%{perl_vendorlib}
 %make
 
 %check
-export PERL5LIB=%{perl_vendorlib}
+export PERL5LIB=%{perl_vendorlib}/
 make test
 
 %clean 
