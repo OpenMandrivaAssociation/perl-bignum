@@ -13,6 +13,7 @@ Url:		http://search.cpan.org/dist/%{module}/
 Source:		http://www.cpan.org/modules/by-module/Math/%{module}-%{version}.tar.gz
 BuildRequires:  perl-Math-BigInt >= 1.87
 BuildRequires:  perl-Math-BigRat >= 0.20
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 All operators (including basic math operations) are overloaded. Integer and
