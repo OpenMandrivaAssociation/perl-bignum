@@ -1,5 +1,5 @@
 %define upstream_name	 bignum
-%define upstream_version 0.23
+%define upstream_version 0.25
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
