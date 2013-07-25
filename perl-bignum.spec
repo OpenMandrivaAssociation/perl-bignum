@@ -1,15 +1,15 @@
 %define upstream_name	 bignum
-%define upstream_version 0.25
+%define upstream_version 0.32
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.32
+Release:	1
 
 Summary:	Transparent BigNumber support for Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Math/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Math/bignum-0.32.tar.gz
 
 BuildRequires:	perl-Math-BigInt >= 1.87
 BuildRequires:	perl-Math-BigRat >= 0.20
@@ -71,3 +71,4 @@ make test
 
 * Sun Sep 02 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.22-1mdv2008.0
 - first mdv release
+
