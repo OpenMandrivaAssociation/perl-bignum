@@ -13,6 +13,7 @@ Source0:	http://www.cpan.org/modules/by-module/Math/%{upstream_name}-%{upstream_
 
 BuildRequires:	perl-Math-BigInt >= 1.87
 BuildRequires:	perl-Math-BigRat >= 0.20
+BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-devel
 
 %description
