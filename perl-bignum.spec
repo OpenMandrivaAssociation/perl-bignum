@@ -1,9 +1,9 @@
 %define upstream_name	 bignum
-%define upstream_version 0.25
+%define upstream_version 0.51
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	1
 
 Summary:	Transparent BigNumber support for Perl
 License:	GPL+ or Artistic
