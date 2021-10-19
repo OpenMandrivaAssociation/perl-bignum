@@ -22,25 +22,25 @@ floating-point constants are created as proper BigInts or BigFloats,
 respectively.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{upstream_version}
 
 %build
 export PERL5LIB=%{perl_vendorlib}
 perl Makefile.PL installdirs=vendor
-%make
+%make_build
 
 %check
 export PERL5LIB=%{perl_vendorlib}/
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc BUGS LICENSE TODO README CHANGES
 %{perl_vendorlib}/*.pm
 %{perl_vendorlib}/Math
-%{_mandir}/*/*
+%doc %{_mandir}/*/*
 
 %changelog
 * Tue Oct 19 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.250.0-1mdv2011.0
