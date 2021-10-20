@@ -1,3 +1,6 @@
+# Work around incomplete debug packages
+%global _empty_manifest_terminate_build 0
+
 %define upstream_name	 bignum
 %define upstream_version 0.51
 
@@ -41,34 +44,3 @@ make test
 %{perl_vendorlib}/*.pm
 %{perl_vendorlib}/Math
 %doc %{_mandir}/*/*
-
-%changelog
-* Tue Oct 19 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.250.0-1mdv2011.0
-+ Revision: 586763
-- new version
-
-* Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 0.230.0-1mdv2010.0
-+ Revision: 402087
-- rebuild using %%perl_convert_version
-
-* Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 0.23-2mdv2009.0
-+ Revision: 268897
-- rebuild early 2009.0 package (before pixel changes)
-
-* Tue Apr 15 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.23-1mdv2009.0
-+ Revision: 193749
-- update to new version 0.23
-
-  + Olivier Blin <oblin@mandriva.com>
-    - restore BuildRoot
-
-  + Thierry Vignaud <tv@mandriva.org>
-    - kill re-definition of %%buildroot on Pixel's request
-
-* Sun Sep 02 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.22-1mdv2008.0
-+ Revision: 78390
-- import perl-bignum
-
-
-* Sun Sep 02 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.22-1mdv2008.0
-- first mdv release
